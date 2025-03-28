@@ -1,0 +1,94 @@
+.root {
+  /* 定義全局變量，用於設置文章的最大寬度 */
+  --article-width: 350px;
+}
+
+.blogs-center {
+  width: var(--fluid-width);
+  /* 設置寬度為流體寬度變量 */
+
+  max-width: var(--article-width);
+  /* 設置最大寬度為文章寬度變量 */
+
+  margin: 0 auto;
+  /* 設置外邊距為自動，居中對齊 */
+}
+
+img {
+  height: 12rem;
+  /* 設置圖片高度為12rem */
+
+  width: 100%;
+  /* 設置圖片寬度為100% */
+
+  display: block;
+  /* 設置圖片為塊級元素 */
+
+  object-fit: cover;
+  /* 設置圖片的對齊方式為cover，保持寬高並裁剪圖片以填充容器 */
+}
+
+.blog {
+  background-color: white;
+  /* 設置背景顏色為白色 */
+
+  padding: 0.75rem;
+  /* 設置內邊距為0.75rem */
+
+  border-radius: var(--border-radius);
+  /* 設置邊框圓角變量值 */
+
+  margin-bottom: 2rem;
+  /* 設置底部外邊距為2rem */
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* 設置盒子陰影，水平偏移0，垂直偏移5px，模糊半徑15px，顏色為黑色且透明度為0.2 */
+
+  transition: 0.5s ease-in-out all;
+  /* 設置過渡效果，持續時間0.5秒，過渡效果為ease-in-out，應用於所有屬性 */
+}
+
+.blog-img {
+  border-radius: var(--boader-radius);
+  margin-bottom: 0.5rem;
+}
+
+.blog-content {
+  padding-bottom: 1rem;
+}
+
+.blog-content span {
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: var(--letter-spacing);
+  font-weight: 500;
+}
+.blog-content h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  margin: 0.5rem 0;
+}
+.blog-content p {
+  color: var(--grey);
+  margin-bottom: 0.5rem;
+}
+.blog-content a {
+  text-transform: capitalize;
+  color: var(--primary-dark);
+  letter-spacing: 1px;
+}
+.blog: hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.blogs-center {
+  display: grid;
+  grid grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 450px){
+  .blogs-center{
+    display: flex;
+    flex-direction: column;
+  }
+}
