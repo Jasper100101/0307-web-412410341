@@ -1,19 +1,30 @@
 .root {
   /* 定義全局變量，用於設置文章的最大寬度 */
   --article-width: 350px;
-}
+}  
 
 .blogs-center {
-  width: var(--fluid-width);
-  /* 設置寬度為流體寬度變量 */
-
-  max-width: var(--article-width);
-  /* 設置最大寬度為文章寬度變量 */
-
-  margin: 0 auto;
-  /* 設置外邊距為自動，居中對齊 */
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 2rem;
 }
 
+@media screen and (max-width: 450px){
+  .blogs-center{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*
+.blog-center{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+*/
 img {
   height: 12rem;
   /* 設置圖片高度為12rem */
@@ -77,18 +88,6 @@ img {
   color: var(--primary-dark);
   letter-spacing: 1px;
 }
-.blog: hover {
+.blog:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-.blogs-center {
-  display: grid;
-  grid grid-template-columns: repeat(3, 30%);
-  gap: 2rem;
-}
-
-@media screen and (max-width: 450px){
-  .blogs-center{
-    display: flex;
-    flex-direction: column;
-  }
 }
