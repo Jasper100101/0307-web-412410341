@@ -1,0 +1,173 @@
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+  }
+  
+  /* 上方選單 */
+  .navbar {
+    background: #a1cfff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  .navbar nav a:hover {
+    color: #0070f3;
+  }  
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .card {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .card h2 {
+    margin: 15px 0 10px;
+  }
+  
+  .card p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .main-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .card-footer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* 按鈕 */
+  .btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* 顏色 */
+  .red {
+    border-color: #f8b5b5;
+  }
+  .blue {
+    border-color: #b5d1f8;
+  }
+  .green {
+    border-color: #b5f8c3;
+  }
+  .yellow {
+    border-color: #f8e5b5;
+  }
+  
+  .red-btn {
+    background-color: #f8b5b5;
+    color: #6b0000;
+  }
+  .red-btn:hover {
+    background-color: #f48c8c;
+  }
+  
+  .blue-btn {
+    background-color: #b5d1f8;
+    color: #002b6b;
+  }
+  .blue-btn:hover {
+    background-color: #8cb8f4;
+  }
+  
+  .green-btn {
+    background-color: #b5f8c3;
+    color: #006b2c;
+  }
+  .green-btn:hover {
+    background-color: #8cf4a1;
+  }
+  
+  .yellow-btn {
+    background-color: #f8e5b5;
+    color: #6b5200;
+  }
+  .yellow-btn:hover {
+    background-color: #f4d88c;
+  }
+  
+  
+  /* Blogs 區域 */
+  .blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+  }
+  .blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .blog-content {
+    padding: 1rem;
+  }
+  .blog-content h3 {
+    margin-bottom: 0.5rem;
+  }
+  .blog-content p {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  .blog-content a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+  }
