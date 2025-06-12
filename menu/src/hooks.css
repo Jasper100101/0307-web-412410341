@@ -1,0 +1,19 @@
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: blue;
+}
+body {
+  background-color: gainsboro;
+  span {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+}
